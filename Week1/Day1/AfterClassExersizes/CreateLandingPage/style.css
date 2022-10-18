@@ -1,0 +1,63 @@
+body {
+margin: auto;
+padding-top: 0px;
+background-color: lightgray;
+    }
+
+nav {
+    background-color: lightgray;
+    margin: auto;
+    height: 50px;
+    padding: 0px;
+    text-align: left;
+        }
+
+ul {
+    list-style-type: none;
+}
+button {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+li {
+    display: inline-block;    
+}
+
+h1 {
+    color: white;
+
+}
+.centeritems {
+    background-image: url(oshen.jpg);
+    background-repeat: no-repeat;  
+    background-size: cover;
+    height: 400px;
+    text-shadow: 50% black;
+}
+.centerframe {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding-top: 200px;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+      }
+
+    .boxes {
+        text-align: center;
+        margin-top: 30px;
+        height: 100px;
+    }
+    .box {
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+        text-align: center;
+      }

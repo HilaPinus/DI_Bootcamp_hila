@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("ad.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    overflow: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0 0 0 150px;
+    list-style: none;
+}
+
+li {
+    float: left;
+
+}
+
+a{
+    color: white;
+}
+
+.logo img {
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+nav a {
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: arial;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: red;
+    transition: 0.5;
+}
+
+.content {
+    padding-top: 300px;
+    height: 300px;
+    width: 60%;
+}
+h1 {
+    font-size: 100px;
+    text-shadow: 10px 10px white;
+
+}
+
+p {
+    background-color: lightgray;
+}
+
+
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 35px;
+    }
+}
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    nav {
+        background-color: black;
+        color: white;
+    }
+ }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    nav {
+        background-color: red;
+        color: white;
+    }
+ }
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    nav {
+        background-color: lightgreen;
+        color: black;
+    }
+ }
+
+@media all and (max-width: 480px) {
+    nav {
+        background-color: yellow;
+        color: black;
+    }
+ }
+
+ @media all and (max-width: 480px) {
+    h1, p {
+        display: block;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    h1, p {
+display: inline;
+    }
+}

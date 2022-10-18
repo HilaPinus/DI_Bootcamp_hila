@@ -1,0 +1,34 @@
+.container {
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+
+}
+
+.rowcon {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%s;
+
+
+}
+
+.culomncon {
+    border: 1px solid black;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.culomn {
+    border: 1px solid black;
+    width: 33%;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 33%;
+
+}

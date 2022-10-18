@@ -1,0 +1,27 @@
+.grey {
+    background-color: lightgray;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+
+}
+
+.blue {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+  
+
+
+}
+
+.orange{
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    position: relative  ;
+    top: 5px;
+    left: 5px;
+
+}

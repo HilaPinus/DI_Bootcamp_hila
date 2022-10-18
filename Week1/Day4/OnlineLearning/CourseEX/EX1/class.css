@@ -1,0 +1,60 @@
+/* Create a stuctured html file with Boostrap CDN.
+!! Make sure to put a border in each of the block so you can see the way they work !!
+1. Create a structure with a container, 2 rows and 3 columns in each row. What should be the width of each column so that the 3 columns will take the whole width of the row ?
+
+    <div class="container">
+        <div class="row">
+            <div class="col"> Column </div>
+            <div class="col"> Column </div>
+            <div class="col"> Column </div>
+        </div>
+        <div class="row">
+            <div class="col"> Column </div>
+            <div class="col"> Column </div>
+            <div class="col"> Column </div>
+          </div>
+    </div>
+
+.row {
+    margin: 50px;
+}
+
+.col {
+    border: 1px solid black;
+}
+_____________________________________________________________________
+
+*/
+
+/*2. Create a structure with a container, 2 rows and 2 columns in each row. Use offset to make a space between the 2 columns
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4 offset-md-4">.col-md-4 .offset-md-4</div>          </div>
+    </div>
+
+
+.col-md-4 {
+    border: 1px solid black;
+}
+_____________________________________________________________________
+*/
+
+/*
+3. Create a structure with 2 rows and 2 columns in each row. What happens if you don't have any container ?
+Rows width fill the page, coulomns they push aside*/
+
+/*
+4. Create a structure with a container, 2 columns. What happens if you don't have any row ?
+each column takes a full row of his own.
+
+5. Create a structure with a container, 1 row and 3 columns in the row. Make it responsive so depending of the width of the screen, the columns will be displayed differently. Write a code for 4 different type of screen.
+*/
+
+.col {
+    border: 1px solid black;
+}

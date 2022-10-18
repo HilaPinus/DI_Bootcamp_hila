@@ -1,0 +1,32 @@
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    border: 1px solid red;
+    margin: auto;
+    flex-direction: column;
+    width: 500px;
+    text-align: center;
+    }
+
+.updwon {
+    background-color: lightblue;
+    width: 50%;
+    height: 50px;
+    margin: 1px;
+
+}
+
+.middle {
+   align-self: stretch;
+    background-color: lightblue;
+    height: 100px;
+}

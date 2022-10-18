@@ -1,0 +1,15 @@
+#container {
+    margin: auto;
+    width: 50%;
+    background-color: lightgray;
+    width: 1000px;
+    height: 500px;
+    display: flex;
+
+}
+#right {
+    text-align: center;
+    display: inline-block;
+    width: 600px;
+}
+

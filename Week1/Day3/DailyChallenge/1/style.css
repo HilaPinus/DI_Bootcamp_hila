@@ -1,0 +1,33 @@
+
+.container {
+    display: flex;
+
+}
+.yellow {
+    border: 1px solid black;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    margin: 50px;
+}
+
+
+.rigth {
+    display: flex;
+    flex-direction: column;
+
+}

@@ -1,0 +1,25 @@
+
+section {
+  border: 5px solid red;
+  padding: 10px;
+}
+
+.one, .two, .three {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.one, .three {
+  height: 15vh;
+
+}
+
+.two {
+  width: 60%;
+  height: 30vh;
+  margin: 15px auto;
+  gap: 100;
+}

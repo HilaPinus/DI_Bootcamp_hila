@@ -1,0 +1,51 @@
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+nav {
+    background-color: beige;
+    margin-top: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.movielist {
+    margin: 50px;
+}
+
+li {
+    list-style-type: none;
+    border: 5px solid bisque;
+    margin: 40px;   
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}
+
+.director {
+    border: 5px solid khaki;
+}
+
+h1 {
+    background-color: beige;
+}
+
+p {
+    background-color: khaki;
+}
+
+.dr {
+text-align: center;
+width: 40%;
+}

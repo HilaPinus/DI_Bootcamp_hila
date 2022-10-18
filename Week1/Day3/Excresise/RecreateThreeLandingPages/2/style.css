@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    color: white;
+    font-size: 1.2em;
+    font-family: cursive;
+}
+
+nav {
+    background-color: #32676D;
+    height: 40px;
+    text-align: center;
+    padding: 10px 10px;
+}
+button {
+    background-color: blue;
+    margin-left: 25px;
+    font-family: cursive;
+
+}
+
+
+.texti {
+    display: flex;
+    align-items: center;
+}
+.content {
+    padding: 20PX;
+    background-color: #7cb9b4;
+    margin-top: 5px;
+    display: block;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 0.5em;
+}
+
+.fname {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 2px;
+
+}
+
+
+.lname {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 2px;
+
+}
+
+.email {    
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    margin: 2px;
+    padding-top: 5px;
+
+
+}
+
+.emloyees {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    width: 100%;
+    margin: 2px;
+    padding-top: 5px;
+
+
+}
+
+.phone {
+    margin: 2px;
+    padding-top: 5px;
+
+
+}
+
+.web {
+    margin: 2px;
+    padding-top: 5px;
+
+
+}
+
+.company {
+    margin: 2px;
+    padding-top: 5px;
+}
+
+.service {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    width: 100%;
+    margin: 2px;
+    padding-top: 5px;
+}
+
+select {
+    width: 100%;
+}
+
+.check {
+    align-self: flex-start;
+}
+
+
+.dn {
+    align-self: flex-start;
+}
+

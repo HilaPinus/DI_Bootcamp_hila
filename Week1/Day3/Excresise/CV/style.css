@@ -1,0 +1,43 @@
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+.header, .contact, .protfolio, .education, .experience {
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+    grid-column: 1 / 4;    
+}
+
+img {
+    display: inline-block;
+    align-items: ;
+}
+
+.education {
+    grid-row: 3 / 4;
+}
+
+.protfolio {
+    grid-column: 2 / 4;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+
+.experience {
+    grid-column: 2 / 4;
+    border-left: 1px solid gray;
+
+}
+
+.contact {
+    border-bottom: 1px solid gray;
+
+}
