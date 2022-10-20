@@ -1,4 +1,4 @@
-Loops
+/*Loops
 
 Exercise 1
 Write a JavaScript for loop that will iterate from 0 to 15.
@@ -16,15 +16,7 @@ for (let i=0; i <= 15; i++) {
 */
 Exercise 2
 
-let names= ["john", "sarah", 23, "Rudolf",34]
-for (i=0; i<names.length;i++) {
-    if (i === Number) {
-        continue;
-    } else if (i === string) {
-        return (i).charAt(0) === (i).charAt(0).toUpperCase()
-    }
-    console.log(names(i));
-}
+    
 1. Write a JavaScript for loop that will go through the variable names.
 if the item is not a string, pass.
 if the item is a string, check if its first letter is in uppercase. If not, change it to uppercase and then display the name.
@@ -32,3 +24,23 @@ if the item is a string, check if its first letter is in uppercase. If not, chan
 2. Write a JavaScript for loop that will go through the variable names
 if the item is not a string, go out of the loop.
 if the item is a string, display it.
+
+
+let names= ["john", "sarah", 23, "Rudolf",34];
+for ( let i=0; i<names.length; i++) {
+    if (i === Number) {
+        continue;
+    } else if (i === String) {
+        console.log((i));
+}
+}
+
+let names= ["john", "sarah", 23, "Rudolf",34]
+for (i=0; i<names.length;i++) {
+    if (i === Number && (i).charAt(0).uppercase) {
+        continue;
+    } else if (i === string) {
+        console.log((i).charAt(0).toUpperCase());
+    }
+}
+    

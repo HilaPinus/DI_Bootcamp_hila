@@ -1,7 +1,7 @@
-/*
-Introduction To JavaScript
 
-Exercise 1
+//Introduction To JavaScript
+
+//Exercise 1
 
 let addressNumber = "21";
 let addressStreet = "Lachish";
@@ -10,7 +10,7 @@ let globalAddress = "I live in" + " " + addressStreet + ", " + addressNumber + "
 console.log(globalAddress);
 
 
-Exercise 2
+//Exercise 2
 
 let birth = 1991;
 let year = 2022; 
@@ -19,8 +19,8 @@ let final = "I will be" + " " + age + " " + "in" + " " + year;
 console.log(final);
 
 ________________________________________________________________
-Javascript Arrays
-Exercise 3
+//Javascript Arrays
+//Exercise 3
 
 let pets = ["cat", "dog", "fish", "rabbit", "cow"];
 let fav = pets[1];
@@ -31,11 +31,9 @@ console.log(pets);
 pets.length;
 
 
+EX XP - 
 
-
-/*EX XP - 
-
-🌟 Exercise 1: Your Favorite Food
+//🌟 Exercise 1: Your Favorite Food
 
 let favFood = "Bamba";
 let favMeal = "Breakfast";
@@ -43,37 +41,37 @@ let iEat = "I eat" + " " + favFood + " " + "at every" + " " + favMeal;
 console.log(iEat);
 
 
-🌟 Exercise 2 : Series
+//🌟 Exercise 2 : Series
 
-Part I
-1.Create a variable named myWatchedSeriesLength that is equal to the number of series in the myWatchedSeries array.
+//Part I
+//1.Create a variable named myWatchedSeriesLength that is equal to the number of series in the myWatchedSeries array.
 const myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
 let myWatchedSeriesLength = myWatchedSeries.length;
 console.log(myWatchedSeriesLength)
 
-2. Create a variable named myWatchedSeriesSentence, that is equal to a sentence describing the series you watched
-For example : black mirror, money heist, and the big bang theory
+//2. Create a variable named myWatchedSeriesSentence, that is equal to a sentence describing the series you watched
+//For example : black mirror, money heist, and the big bang theory
 const myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
 myWatchedSeriesLength = myWatchedSeries.length;
 
-3. Console.log a sentence using both of the variables created above
-For example : I watched 3 series : black mirror, money heist, and the big bang theory
+//3. Console.log a sentence using both of the variables created above
+//For example : I watched 3 series : black mirror, money heist, and the big bang theory
 myWatchedSeriesSentence = "I watched only one Series:" + " " + myWatchedSeries[0];
 
-Part II
+//Part II
 
-1. Change the series “the big bang theory” to “friends”. Hint : You will need to use the index of “the big bang theory” series.
+//1. Change the series “the big bang theory” to “friends”. Hint : You will need to use the index of “the big bang theory” series.
 let myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
 myWatchedSeries.splice(2, 1, "friends"); 
 console.log(myWatchedSeries) 
 
-2. Add, at the end of the array, the name of another series you watched.
+//2. Add, at the end of the array, the name of another series you watched.
 let myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
 myWatchedSeries.splice(2, 1, "friends"); 
 myWatchedSeries.push("CocoMelone");
 console.log(myWatchedSeries); 
 
-3. Add, at the beginning of the array, the name of your favorite series.
+//3. Add, at the beginning of the array, the name of your favorite series.
 let myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
 myWatchedSeries.splice(2, 1, "friends"); 
 myWatchedSeries.push("CocoMelone");
@@ -81,7 +79,7 @@ console.log(myWatchedSeries);
 myWatchedSeries.unshift("Fauda");
 console.log(myWatchedSeries); 
 
-4. Delete the series “black mirror”.
+//4. Delete the series “black mirror”.
 let myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
 myWatchedSeries.splice(2, 1, "friends"); 
 myWatchedSeries.push("CocoMelone");
@@ -90,7 +88,7 @@ myWatchedSeries.splice(1,1);
 console.log(myWatchedSeries);
 
 
-5. Console.log the third letter of the series “money heist”.
+//5. Console.log the third letter of the series “money heist”.
 let myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
 myWatchedSeries.splice(2, 1, "friends"); 
 myWatchedSeries.push("CocoMelone");
@@ -98,7 +96,7 @@ myWatchedSeries.unshift("Fauda");
 myWatchedSeries.splice(1,1);
 console.log(myWatchedSeries[1][2]);
 
-6. Finally, console.log the myWatchedSeries array, to see all the modifications you’ve made.
+//6. Finally, console.log the myWatchedSeries array, to see all the modifications you’ve made.
 let myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
 myWatchedSeries.splice(2, 1, "friends"); 
 myWatchedSeries.push("CocoMelone");
@@ -106,13 +104,13 @@ myWatchedSeries.unshift("Fauda");
 myWatchedSeries.splice(1,1);
 console.log(myWatchedSeries);
 
-🌟 Exercise 3 : The Temperature Converter
+//🌟 Exercise 3 : The Temperature Converter
 let celsiusTemperature = 23;
 let fahrenheit = celsiusTemperature / 5 * 9 + 32;
 console.log(fahrenheit);
 
 
-🌟 Exercise 4 : Guess The Answers #1
+//🌟 Exercise 4 : Guess The Answers #1
 
 let c;
 let a = 34;
@@ -133,10 +131,10 @@ console.log(a+b) //second expression
 3. What is the value of c? -  undefined
 4. Analyse the code below, what will be the outcome?
 console.log(3 + 4 + '5');
-3,4 is a number but 5 is a String. js will give me 7+"5".
+----3,4 is a number but 5 is a String. js will give me 7+"5".
 
 
-Exercise 5 : Guess The Answers #2
+//Exercise 5 : Guess The Answers #2
 
 typeof(15)
 // Prediction: number
@@ -203,7 +201,7 @@ typeof(1 != 2)
 // Actual: false
 
 
-Exercise 6 : Guess The Answers #3
+//Exercise 6 : Guess The Answers #3
 
 5 + "34"
 // Prediction: 534

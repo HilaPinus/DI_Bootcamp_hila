@@ -1,4 +1,4 @@
-Exercise 1 : The World Translator
+/*Exercise 1 : The World Translator
 Ask the user which language they speak.
 Convert the user’s answer to lowercase, so that all the user’s inputs will be accepted in
  the if statement. For example “english” or “English” or “ENGlish” ect…”
@@ -7,7 +7,7 @@ If the user speaks French : display “Bonjour”
 If the user speaks English : display “Hello”
 If the user speaks Hebrew : display “Shalom”
 If the user doesn’t speak any of these 3 languages: display ‘01110011 01101111 01110010 01110010 01111001’
-
+*/
 let userLang = prompt("what lang you speak?").toLocaleLowerCase()
 if (userLang === "french") {
   console.log("Bonjour");
@@ -41,6 +41,7 @@ If the grade is between 80 and 90 (included), console.log “B”
 If the grade is between 70(included) and 80 (included), console.log “C”
 If the grade is lower than 70, console.log “D”
 code:
+*/
 let userGrade = +prompt("what is your grade?");
 if (userGrade >=90) {
   console.log("A");
@@ -52,7 +53,7 @@ if (userGrade >=90) {
   console.log("D");
 }
 
-
+/*
 
 Exercise 3 : Verbing
 Prompt the user for a string. It must be a verb.
@@ -63,7 +64,7 @@ Example:
   The string is : "swim" , your program should console.log : "swimming"
   The string is : "swimming", your program should console.log : "swimmingly"
   The string is : "go" your program should console.log : "go"
-
+*/
   let userVerb = prompt("type in a verb");
   if (userVerb.length >= 3 && !userVerb.endsWith("ing")) {
     console.log(userVerb + "ing");
@@ -71,4 +72,4 @@ Example:
     console.log(userVerb + "ly");
   } else (userVerb.length < 3)
     console.log(userVerb);
-  */
+  

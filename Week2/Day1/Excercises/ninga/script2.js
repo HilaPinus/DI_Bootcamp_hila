@@ -2,7 +2,7 @@
 Exercises XP Ninja
 
 Exercise 1 : Evaluation
-
+*/
 5 >= 1 //true
 0 === 1 // false
 4 <= 1 //false
@@ -13,15 +13,16 @@ Exercise 1 : Evaluation
 "b" < "A" //false
 true === false //false
 true != true //false
-*/
+
 
 Exercise 2 : Ask For Numbers
 Ask the user for a string of numbers separated by commas
 Console.log the sum of the numbers.
 Hint: use some string methods
 
-let usersNumbers = prompt("type numbers separeted by commas");
-console.log(sum.usersNumbers);
+const usersNumbers = prompt("type numbers separeted by commas");
+usersNumbers = usersNumbers.join(,);
+console.log(usersNumbers);
 
 const str1 = '5a';
 const str2 = '15b';
