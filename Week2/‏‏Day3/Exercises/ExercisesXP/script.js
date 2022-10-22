@@ -64,12 +64,13 @@ let colors = ["red", "blue", "yellow", "pink", "black"];
 
 let userNumber = +prompt("type a number");
 
-************not complete
 //While the number is smaller than 10 continue asking the user for a new number. 
 //Tip : Which while loop is more relevant for this situation?
 it a matter of true\false - even if prompt is greater or lower then 10.
 
-let userNumber = +prompt("type a number");
+let number = null
+while (number != 10)
+const userAnswer = +prompt("type a number");
 while (userNumber <= 10) {
     +prompt("type a number");
         userNumber++;
