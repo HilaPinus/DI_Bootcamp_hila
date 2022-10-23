@@ -1,55 +1,34 @@
-Instructions
-Have you heard the infamous song “99 Bottles of Beer?”
-In this exercise you need to console.log the lyrics of our own 99 Bottles of Beer song.
+let numberOfBeers = +prompt("how many beers?");
+let umberOfBeersToTakeAway = 1;
 
-==============================
-Example
-==============================
+while (numberOfBeers > 0) {
+const stanza = makeStanza(numberOfBeers, umberOfBeersToTakeAway);
+console.log(stanza);
+numberOfBeers = numberOfBeers-umberOfBeersToTakeAway;
+umberOfBeersToTakeAway = umberOfBeersToTakeAway +1;
+}
+function makeStanza(num, counter) {
+const ButtelOrButtels = getButtelOrButtels(num);
+const stanza = `${num} ${ButtelOrButtels} of beer on the wall
+${num} ${ButtelOrButtels} of beer
+Take ${counter} down, pass it around
+${num - counter} ${getButtelOrButtels(num-counter)} of beer on the wall`;
+return stanza;
+}    
 
-99 bottles of beer on the wall
-99 bottles of beer
-Take 1 down, pass it around
-98 bottles of beer on the wall
+function isPlural(num) {
+    if (num>1) {
+    return true
+} else {
+    return false
+}
+}
 
-98 bottles of beer on the wall
-98 bottles of beer
-Take 2 down, pass them around
-96 bottles of beer on the wall
-
-96 bottles of beer on the wall
-96 bottles of beer
-Take 3 down, pass them around
-93 bottles of beer on the wall
-
-ect …
-
-==============================
-
-
-
-Prompt the user for a number to begin counting down bottles.
-
-In the song, everytime a bottle drops,
-the subtracted number should go up by 1.
-For example,
-
-    We start the song at 99 bottles
-    -> Take _1_ down, pass it around
-    -> we have now 98 bottles
-
-    -> then, Take _2_ down, pass them around
-    -> we have now 96 bottles
-
-    -> then, Take _3_ down, pass them around
-    -> we have now 93 bottles
-
-    ... ect
-
-
-3. The song should end with “0 bottle of beer on the wall” or “no bottle of beer on the wall”.
-
-
-4. Note : Make sure you get the grammar correct.
-
-For 1 bottle, you pass “it” around.
-For more than one bottle, you pass “them” around.
+function getButtelOrButtels(num) {
+    if (isPlural(num)) {
+        return "buttles"
+    } else {
+        return "buttle";
+    }
+}
+    

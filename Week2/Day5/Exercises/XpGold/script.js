@@ -10,6 +10,7 @@ the function number(2) will be called. The argument is the value of the button.
 
 Create a HTML file for your calculator and a JS file for the calculator’s functionality.
 You must create 3 functions in the js file:
+
 number(num)
 operator(operator)
 equal()
@@ -19,6 +20,31 @@ You can write it down somewhere if it helps (recommended).
 Bonus : create the RESET and CLEAR buttons.
 */
 
-number(num)
-operator(operator)
-equal()
+let equasion = " ";
+function number(num) {
+    equasion = equasion + "" + num;
+    console.log(equasion);
+}
+
+function operator(operator) {
+    equasion = equasion + operator;
+    console.log(equasion);
+
+} 
+function equal() {
+console.log(eval(equasion));
+equasion = " ";
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
