@@ -6,6 +6,7 @@ Create a function called infoAboutMe() that takes no parameter.
 The function should console.log a sentence about you (ie. your name, age, hobbies ect…).
 Call the function.
 */
+
 function infoAboutMe() {
     console.log("My Name is Hila, I'm 31 years old and I have two babies - Mia and Shilo.");
 }
@@ -197,8 +198,6 @@ function calculationSum (arr) {
 🌟 Exercise 6 : Vacations Costs
 Let’s create functions that calculate your vacation’s costs:
 
-
-
 /*Define a function called hotelCost().
 It should ask the user for the number of nights they would like to stay in the hotel.
 If the user doesn’t answer or if the answer is not a number, ask again.
@@ -269,12 +268,10 @@ ___________________________
 
 function totalVacationCost (rentalCarCost, planeRideCost, hotelCost) {
 
-
 function hotelCost(pricePerNigth, numberNigths = +prompt("what is the number of nights they would like to stay in the hotel?")) {
     console.log(numberNigths*pricePerNigth);
     }
     hotelCost(140)
-    
     
 function planeRideCost (userDastination=prompt("whats your destonation?")) {
         if (userDastination === "london") {
