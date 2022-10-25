@@ -206,6 +206,7 @@ The hotel costs $140 per night. The function should return the total price of th
 function hotelCost(pricePerNigth, numberNigths = +prompt("what is the number of nights they would like to stay in the hotel?")) {
 console.log(numberNigths*pricePerNigth);
 }
+return
 hotelCost(140)
 *******see video to check -If the user doesn’t answer or if the answer is not a number, ask again.
 
@@ -227,6 +228,7 @@ function planeRideCost (userDastination=prompt("whats your destonation?")) {
     } else {
         console.log("300$");
     }
+    return
  }
 
  planeRideCost ()
@@ -249,6 +251,7 @@ function rentalCarCost(costPerDay, userNum = +prompt("number of days to rent the
     } else {
     console.log("the total cost of a car for", userNum, "days is", costPerDay*userNum );
 }
+return
 }
 rentalCarCost (40)
 
@@ -300,6 +303,52 @@ function totalVacationCost (rentalCarCost, planeRideCost, hotelCost) {
     }
     
     console.log(rentalCarCOst, planeRideCost, hotelCost);
+}
+
+totalVacationCost()
+
+
+
+
+
+
+try fix that code- 
+
+function hotelCost(pricePerNigth, numberNigths = +prompt("what is the number of nights they would like to stay in the hotel?")) {
+    console.log(numberNigths*pricePerNigth);
+    }
+    return
+    hotelCost(140)
+    
+function planeRideCost (userDastination=prompt("whats your destonation?")) {
+        if (userDastination === "london") {
+            console.log("183$");
+        } else if (userDastination === "paris") {
+            console.log("220$");
+        } else {
+            console.log("300$");
+        }
+    return
+     }
+    
+     planeRideCost (1)
+    
+function rentalCarCost(costPerDay, userNum = +prompt("number of days to rent the car")) {
+        if (userNum > 10) {
+            console.log("the total cost of a car for", userNum, "days is", (costPerDay*userNum)*0.95 );
+        } else {
+        console.log("the total cost of a car for", userNum, "days is", costPerDay*userNum );
+    }
+    return
+    }
+    rentalCarCost (40)
+    
+function totalVacationCost (rentalCarCost, planeRideCost, hotelCost) {
+    const car = rentalCarCost ()
+    const dastination = planeRideCost ()
+    const numberNigth = hotelCost ()
+    const total = car + dastination + numberNigth;
+    console.log (total);
 }
 
 totalVacationCost()

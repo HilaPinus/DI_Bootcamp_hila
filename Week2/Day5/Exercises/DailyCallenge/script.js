@@ -1,3 +1,7 @@
+
+
+
+
 let numberOfBeers = +prompt("how many beers?");
 let umberOfBeersToTakeAway = 1;
 
@@ -7,6 +11,7 @@ console.log(stanza);
 numberOfBeers = numberOfBeers-umberOfBeersToTakeAway;
 umberOfBeersToTakeAway = umberOfBeersToTakeAway +1;
 }
+
 function makeStanza(num, counter) {
 const ButtelOrButtels = getButtelOrButtels(num);
 const stanza = `${num} ${ButtelOrButtels} of beer on the wall
