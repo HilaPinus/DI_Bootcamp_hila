@@ -20,7 +20,13 @@ const section = document.querySelector(".listPlanets");
 section?.appendChild(div)
 }
 
-let earthPlanet = document.getElementsByClassName("planet earth").style.backgroundColor=("red");
+
+document.getElementsByClassName("earth").style.background= "red";
+document.getElementsByClassName("mars").style.background= "blue";
+document.getElementsByClassName("jupiter").style.background= "yellow";
+document.getElementsByClassName("saturn").style.background= "brwon";
+document.getElementsByClassName("uranus").style.background= "white";
+document.getElementsByClassName("nepton").style.background= "gray";
 
 //Finally append each div to the <section> in the HTML (presented below).
 //Bonus: Do the same process to create the moons.
