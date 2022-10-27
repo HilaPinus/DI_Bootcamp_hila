@@ -1,0 +1,1 @@
+document.getElementsByClassName('drag').setAttribute('draggable', 'false'); 
