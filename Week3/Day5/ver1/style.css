@@ -1,0 +1,160 @@
+body {
+    font-family: 'Shadows Into Light', cursive;
+    margin: auto;
+    padding-top: 0px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.up {
+display: inline-block;
+width: 100%;
+background: linear-gradient(-45deg, #ffffff, #efd1e5, #ebdaeb, #fdd2f5);
+animation: gradient 15s ease infinite;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: #ba8eb7;
+    text-shadow: 2px 2px #c8a9c5;
+}
+
+
+.animate-charcter {
+    background-image: linear-gradient(
+      -225deg,
+      #f4f4f4 0%,
+      #d8c4ed 29%,
+      #ebb5df 67%,
+      #e0cde0 100%
+    );
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+h2 {
+    color: rgb(146, 62, 146);
+    font-size: 2rem;
+
+}
+.up2 {
+    display: flex;
+    background-image: url(BG1.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+height: 500px;}
+
+.middle {
+        display: flex;
+}
+.first, .second, .third {
+width: 33%;
+text-align: center;
+padding-top: 30px;
+}
+
+
+.dwon {
+    display: flex;
+    padding: 10px;
+    position: relative;
+
+}
+
+
+.dwon p {
+    color: gray;
+    display: flex;
+}
+
+span {
+    color: white;
+}
+
+h6 {
+    font-size: 1.5em;
+    color: white;
+}
+
+.pink {
+    background-color: pink;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.blue {
+    background-color: blue;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.green {
+    background-color: green;
+    text-align: center;
+    padding: 10px;
+}
+
+.left, .ri, .center {
+    padding: 10px;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: inline-block;
+    margin-top: 50px;
+    height: 100%;
+}
+
+
+.chris {
+    height: 70px;
+    width: 70px;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.tina {
+    height: 70px;
+    width: 70px;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    margin-top: 5px;
+}
+
+.corrine {
+    height: 70px;
+    width: 70px;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    margin-top: 5px;
+}
