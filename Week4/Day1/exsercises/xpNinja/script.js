@@ -10,10 +10,15 @@ const menu = [
       name : "Vegetable Soup with Houmous peas"
     },
     {
-      type : "c",
+      type : "dessert",
       name : "Chocolate Cake"
     }
   ]
+
+ let menus = menu.forEach((number, index) => {
+    return menus;
+  });
+
 
 
 //Using an array method and ternary operator, check if at least one element in the menu array is a dessert.
