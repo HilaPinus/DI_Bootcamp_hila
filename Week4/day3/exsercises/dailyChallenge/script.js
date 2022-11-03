@@ -17,11 +17,11 @@ const inventory = [
 function getCarHonda(ids) {
     const honda = ids.find((id) => id.car_make === "Honda");
     //const sentence = "this is a " + honda.car_make + honda.car_model + " from " + honda.car_year;
-    console.log(sentence);
+    //console.log(sentence);
     const year = honda.car_year;
     const makecar = honda.car_make;
     console.log(honda, year);
-    return "this is a " + makecar + " from " +year;
+    return "this is a " + makecar + " from " + year;
 }
 getCarHonda(inventory)
 
@@ -41,3 +41,4 @@ const inventory = [
 ];
 
 inventory.sort((firstItem, secondItem) => firstItem.car_year - secondItem.car_year);
+  
