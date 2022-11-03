@@ -36,7 +36,7 @@ const cloneGroceries = () => {
     user = "Betty"; //only user is changed?
     const shopping = groceries;
     groceries.totalPrice = "35$";
-    groceries.other.payed = false;
+    groceries.other.payed = false; 
 
 }
 //Invoke the cloneGroceries function.
