@@ -1,0 +1,64 @@
+body {
+    margin: auto;
+    background-color: rgb(139, 112, 194);
+    background-image: url(bj.png);
+}
+
+nav {
+    border: 1px solid black;
+    background-color: rgb(122, 182, 122);
+    display: flex;
+    padding: 20px;
+    background-image: url(bj.png);
+}
+
+form {
+    display: inline;
+    margin: 10px;
+}
+
+#search {
+    width: 500px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: lightgray;
+}
+
+
+#logo {
+    float: left;
+    height: 40px;
+}
+
+.cardcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding-top: 50px;
+    margin: 50px;
+}
+
+div {
+    border: 1px solid black;  
+    padding: 10px;
+
+
+}
+.card {
+    background-color: rgb(109, 171, 171);
+    border-radius: 10%;
+}
+
+.roungimg {
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(41, 41, 86);
+
+}
+
+.imgrapper {
+    border: 1px solid black;
+    justify-content: center;
+    display: flex;
+
+}

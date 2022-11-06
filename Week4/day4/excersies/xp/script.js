@@ -25,8 +25,9 @@ ______________________________________________________________
 
 function displayStudentInfo(objUser){
     const {first: first, last: last} = objUser;
-    console.log("your full name is " + first + " " + last);
-    //destructuring
+    const sentence = ("your full name is " + first + " " + last);
+    return sentence;
+    console.log(sentence);
 }
 displayStudentInfo({first: 'Elie', last:'Schoppik'});
 
@@ -141,32 +142,41 @@ console.log(object4.number)
 //The type is the animal type, 
 //for example: dog, cat, dolphin ect …
 
+
+
 class Animal {
   constructor(name, type, color) {
     this.animelName = name;
     this.animalType = type;
     this.animalColor = color;
   }
-};
-
+}
+//const myDog = new Animal("Rex", "German Shefferd", "black") - call dog to check the code in the console
 class Mamal extends Animal {
-   constructor(sound) {
-    super(sound);
-    this.animalSound = sound;
-   }
-
-   speak () {
-    console.log(`${this.animalSound} I'm a ${animalType}, named ${animelName} and I'm ${animalColor}`); 
+   constructor(name, type, color) {
+    super(name, type, color);
    }
   }
-const animal1 = new Mamal("Mooooo", "Cow", "Coco", "black and white")
-animal1.speak()
+sound () {
+  console.log(`${this.animalSound} I'm a ${this.animalType}, named ${this.animelName} and I'm ${this.animalColor}`);
+}
 
+const myCow = new Mamal("Mooooo", "Cow", "Coco", "black and white");
+myCow(sound)
+
+
+
+
+//const myElephent = new Mamal("tiiiiii", "Dolphin", "Dodo", "Blue")
 //Create a class Mamal that extends from the Animal class. 
 //Inside the class, add a method called sound(). 
 //This method takes a parameter: the sound the animal makes, 
 //and returns the details of the animal (name, type and color) as well as the sound it makes.
 
+speak () {
+  console.log
+ }
+}
 //Create a farmerCow object that is an instance of the class Mamal. 
 //The object accepts a name, a type and a color and calls the sound method that
 //“moos” her information.
