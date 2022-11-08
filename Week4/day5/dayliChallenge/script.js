@@ -31,3 +31,23 @@ console.log("result1:", result1);
 
 //Do we need to consider whitespace?
 //Trim whitespace prior to comparison.
+
+
+//
+
+function isAna(str1, str2) {
+    return (
+        str1.toLowerCase().replace(/ /g, "").split("").sort().toString() ===
+        str2.toLowerCase().replace(/ /g, "").split("").sort().toString()
+    );
+}
+
+console.log(isAna("Astronomer", "Moon Starer"));
+
+
+
+
+
+
+
+
