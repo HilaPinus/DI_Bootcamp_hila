@@ -48,3 +48,20 @@
 -- ', '37.06556165', '1285.857243');
 
 -- SELECT city FROM city_info WHERE city LIKE 'H%';
+
+-- Exercise Use aggregate functions
+SELECT * FROM city_info;
+
+-- 1. How many rows per city does the table have ?
+SELECT city, COUNT(city) FROM city_info GROUP BY city;
+
+-- 2. What is the average dust index in the city of Boston between 01/03/2015 and 05/03/2015?
+SELECT ROUND(AVG(dust),2) AS averge_dust FROM city_info WHERE city='Boston' 
+AND event_datetime BETWEEN '01-03-2015' AND '05-03-2015';
+
+-- 3. How many rows does the table have about the city "San Francisco" ?
+SELECT COUNT(city)FROM city_info WHERE city='San Francisco'; 
+
+-- 4. Where and when (only hour) it's the noisiest in the world?.
+SELECT city, EXTRACT(HOUR FROM event_datetime) AS hour_day FROM city_info 
+WHERE sound=(SELECT MAX(sound) FROM city_info) 
