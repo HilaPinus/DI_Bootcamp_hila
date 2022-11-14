@@ -13,8 +13,8 @@
 
 
 -- 1. Select everything from the table. (every row and columns) - How many records does the table have? 
--- 4,711
 -- SELECT * FROM city_info;
+-- SELECT COUNT(*) FROM city_info; 4711 
 
 -- 2. What was Bostons temperature on the 01/03/2015 at 11am ?
 -- SELECT temperature FROM city_info WHERE city='Boston' AND event_datetime='2015-03-01T11:00';
@@ -38,13 +38,13 @@
 -- SELECT city, EXTRACT(DOW FROM event_datetime) FROM city_info ORDER BY light DESC LIMIT 1;
 
 -- 9. Select only the info of the cities that start with an "S" (uppercase or lowercase). Look at the DISTINCT constraint.
- -- SELECT city FROM city_info WHERE city ILIKE 's%';
+ -- SELECT DISTINCT city FROM city_info WHERE city ILIKE 's%';
 
 -- 10. Add to the table, todays information in Israel - of this very hour. 
 --(event_datetime,city,temperature,light,airquality_raw,sound,humidity,dust) -- - 
 --Use the return statement to see what you just inserted:
-INSERT INTO city_info (event_datetime,city,temperature,light,airquality_raw,sound,humidity,dust)
-VALUES ('2022-11-13T20:00:00', 'Hadera', '35.22793', '6557.749995', '30.35533271', '1572.927093
-', '37.06556165', '1285.857243');
+-- INSERT INTO city_info (event_datetime,city,temperature,light,airquality_raw,sound,humidity,dust)
+-- VALUES ('2022-11-13T20:00:00', 'Hadera', '35.22793', '6557.749995', '30.35533271', '1572.927093
+-- ', '37.06556165', '1285.857243');
 
-SELECT city FROM city_info WHERE city LIKE 'H%';
+-- SELECT city FROM city_info WHERE city LIKE 'H%';
