@@ -1,51 +1,13 @@
 //🌟 Exercise 1 : HTML Form
-//Hint : Read about sending form data using the HTTP protocol
-
-//form
-
-//Create a form like the one above. The form should contain three inputs:
-//a small text input asking for a name,
-//a larger textarea input to write a message,
-//a submit input (“Send”)
-
-
-/*
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    <form method="GET" action="index.html" id="userForm">
-
-        <label for="name">Name</label> <br>
-        <input type="text" id="name" name="name"><br>
-
-        
-        <label for="comments">Comments</label><br>
-        <textarea name="comments" form="userForm"></textarea><br>
-        
-        <input type="submit">    
-
-        
-    </form>
-</body>
-</html>
-*/
 
 //When you click the Send button, the form will be submitted with a GET method. 
 //(you can use the same HTML file for the action url)
 //Where will the sent data appear? 
-URL.
+const form = document.getElementById("userForm");
+const btn = document.getElementById("btn");
+btn.addEventListener("click", getData());
 
-
-
-
-
+function getData ()
 
 //______________________________________________________________________________________________________________________________
 

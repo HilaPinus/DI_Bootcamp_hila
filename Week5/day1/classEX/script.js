@@ -49,15 +49,12 @@ console.log(jasonToJs);
 //THE VALUES OF THE OPTIONS OF THE FIRST SPORT QUESTION
 
 const values = jasonToJs.quiz.sport.q1.options;
-values.forEach(element => { console.log(element);});
-
+values.forEach(element => {console.log(element);});
 
 //Create another variable to stringify the JS object. 
 //Console.log the variable
 const secondJason = JSON.stringify(jasonToJs)
 console.log(secondJason);
-
-
 
 //Then use pretty print (look at the lesson)
 

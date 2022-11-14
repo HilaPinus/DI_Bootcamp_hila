@@ -14,3 +14,4 @@ myRequest.addEventListener("load",function () {
     let myData = JSON.parse(myRequest.responseText);
     console.log(myData.data);
 });
+
