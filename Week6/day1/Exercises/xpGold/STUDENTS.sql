@@ -6,11 +6,11 @@
 -- )
 
 -- COPY students(student_id, student_last_name, student_first_name, student_birth_date)
--- FROM 'C:\Users\Public\STUDENT.excel' 
--- DELIMITER ',' 
--- CSV HEADER;
+-- FROM 'C:\Users\Public\stud.csv' DELIMITER ',' CSV HEADER;
 
+		-- TRUNCATE TABLE students RESTART IDENTITY
 
+-- SELECT * FROM students
 -- INSERT INTO students (student_last_name, student_first_name, student_birth_date)
 -- VALUES 
 -- ('Marc', 'Benichou', '02-11-1998'),

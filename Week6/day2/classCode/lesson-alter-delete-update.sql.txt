@@ -1,0 +1,78 @@
+-- alias :  temporarily assign tables new names during the execution of a query.
+SELECT date_birth AS date_of_birth_actors FROM actors;
+​
+​
+-- Add 2 more columns: salary (integer), nationality (varchar)
+ALTER TABLE actors ADD COLUMN salary NUMERIC DEFAULT 1000;
+ALTER TABLE actors ADD COLUMN nationality VARCHAR(50);
+​
+SELECT * FROM actors ORDER BY actor_id ASC;
+​
+-- drop a column from a table
+-- ALTER TABLE actors 
+-- DROP COLUMN salary;
+​
+-- Update the row with the value of American as the nationality
+UPDATE actors
+SET nationality = 'American'
+WHERE first_name='George' AND last_name='Clooney'
+RETURNING * ;
+​
+​
+-- RETURNING *
+-- means return all the colums of the updated row
+​
+-- RETURNING first_name,last_name, nationality;
+-- return the colums first_name,last_name, nationality of the updated row
+​
+-- udpate all the rows to american
+UPDATE actors
+SET nationality = 'American'
+RETURNING * ;
+​
+-- update the salary of all the actors depending the nb of oscars they have
+UPDATE actors
+SET salary = number_oscars*100000
+RETURNING *;
+​
+-- if the column doesnt have a contraint of NOT NULL, it can be updated to null
+UPDATE actors
+SET nationality = null
+WHERE first_name='George' AND last_name='Clooney'
+RETURNING * ;
+​
+-- the column number_oscars is NOT NULL so, if we forget to fill it with data, we get an error  
+INSERT INTO actors (first_name, last_name, date_birth, number_oscars, salary)
+VALUES ('John', 'Smith', '2012-03-12')
+RETURNING *;
+​
+-- the column last_name is NOT NULL but an empty string doesnt represent NULL so we can add a last_name that is an empty string
+INSERT INTO actors (first_name, last_name, date_birth, number_oscars, salary)
+VALUES ('John', '', '2012-03-12', 2)
+RETURNING *;
+​
+-- actor_id 8
+-- delete all the data and restart the actor_id to 1
+TRUNCATE TABLE actors RESTART IDENTITY;
+​
+SELECT * FROM actors;
+​
+INSERT INTO actors (first_name, last_name, date_birth, number_oscars, nationality)
+VALUES 
+('George', 'Clooney', '2012-03-12', 2, 'American'),
+('Matt', 'Damon', '2012-03-12', 2, 'American'),
+('Angelina', 'Jolie', '2012-03-12', 0, 'Israeli')
+RETURNING *;
+​
+-- she was of id 3
+DELETE FROM actors
+WHERE first_name = 'Angelina';
+​
+SELECT * FROM actors;
+​
+INSERT INTO actors (first_name, last_name, date_birth, number_oscars, nationality)
+VALUES 
+('John', 'Smith', '2012-03-12', 0, 'Israeli')
+RETURNING *;
+-- will the new actor be of id 3 ?
+-- will it be of id 4 ? it will be of id 4 because the serial type keeps running

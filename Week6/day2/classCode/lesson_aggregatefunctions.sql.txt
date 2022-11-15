@@ -1,0 +1,46 @@
+SELECT  FROM actors;
+​
+-- Aggregate functions
+SELECT MAX(salary) AS maximum_salary FROM actors;
+SELECT MIN(salary) AS minimum_salary FROM actors;
+SELECT SUM(salary) AS sum_salary FROM actors;
+​
+-- subquery
+-- first I select the value of the maximum salary
+-- pass the value in the WHERE clause
+SELECT first_name, last_name, salary FROM actors WHERE salary = (SELECT MAX(salary) FROM actors);
+​
+-- the same as
+-- SELECT last_name FROM actors WHERE salary = 5000000;
+​
+-- select how many actors are american
+SELECT COUNT(nationality) FROM actors WHERE nationality = 'American'
+​
+-- INSERT INTO actors (first_name, last_name, date_birth, number_oscars, nationality)
+-- VALUES ('Sarah', 'ABC', '2012-03-12', 2, null)
+-- RETURNING ;
+​
+SELECT COUNT() FROM actors;  -- how many rows in the table  4
+SELECT COUNT(nationality) FROM actors;  -- how many actors with a nationality different than null  3
+​
+-- count the group
+-- SELECT nationality FROM actors; -- show the nationality of each actor
+-- SELECT COUNT() AS number_people FROM actors; -- show how many people is in the table
+​
+-- show how many actor PER nationality
+SELECT nationality, COUNT(nationality) AS number_people 
+FROM actors
+GROUP BY nationality;
+-- null        0
+-- American	2
+-- Israeli	1
+​
+SELECT nationality, COUNT(nationality) AS number_people 
+FROM actors
+GROUP BY nationality
+HAVING nationality='American'; --condition after group by
+​
+SELECT nationality, COUNT(nationality) AS number_people 
+FROM actors
+GROUP BY nationality
+HAVING COUNT(nationality) = 2;
