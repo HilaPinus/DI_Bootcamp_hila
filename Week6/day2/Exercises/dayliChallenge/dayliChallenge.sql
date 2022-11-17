@@ -27,8 +27,11 @@ SELECT * FROM SecondTab
 -- Q1. What will be the OUTPUT of the following statement?
  SELECT COUNT(*) 
     FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id IS NULL )
--- 0 - "where id is null" - NOT IN - this poins to id number 2 - and id number 2 doesnt exist in table1, so its 0
-
+-- 0 - "where id is null" - NOT IN - this poins to id number 2 - and id number 2 doesnt exist in table1, 
+so its 0
+ -- the real anwer is, that null isnt = null so its 0, although the logic tells that it was sepused to point
+ -- to the 3 id's that arent null, but that's not the case. we cant comper with null. 
+ 
 SELECT COUNT(*) 
     FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id = 5 )
 	
