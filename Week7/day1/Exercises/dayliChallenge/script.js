@@ -5,50 +5,36 @@ module.exports = {
 };
 
 
-/*
-const scriptMain =  require('./main.js');
-const partOne = scriptMain.resultPartOne;
-//______________________________________________
-/*
+// // //______________________________________________
 
-// In the script.js file create a 
-//server using the http module (require('http')).
+// Part II:
+// In the script.js file create a server using the http module (require('http')).
 // Create a server instance and bind it at port 3000. 
-//Therefore your server should run on 
-//http://localhost:3000/. When the server run, 
-//you should console.log("I'm listening") in the terminal.
-//Set the response header to 
+//Therefore your server should run on http://localhost:3000/. 
+//When the server run, you should console.log("I'm listening") in the terminal.
+// Set the response header to 
 //res.setHeader('Content-Type', 'text/html')
+//(look at this tutorial- Part named “Serving HTML)
+
+// Respond (res.end) with a HTML paragraph saying 
+//"My Module is <result from Part I>", and an HTML 
+//<h1> saying “Hi there at the frontend
 let http = require("http");
 
-const server = http.createServer(function (req, res) {
+const server = http.createServer((request, response) =>{
+    const scriptMain =  require('./main.js');
+    const partOne = scriptMain.resultPartOne;
     console.log('im listening');
-    res.writeHead(200);
-    res.setHeader(`Content-Type: text/html`);
-    res.end(`My Module is ${partOne}`);
+    response.setHeader('Content-Type', 'text/html');
+    response.end("My Module is " + partOne + "<h1>Hi there at the frotend<h1>");
 
- });
+});
  server.listen(3000);
-/*
-//another try 
-let http = require("http");
-let fs = require('fs');
-
-const server = http.createServer(function(req,res) {
-    res.writeHead(200, {'Content-Type':'text/html'});
-    res.end("My Module is " + partOne);
-
-    let readStream = fs.createReadStream("./index.html");
-
-    readStream.pipe(res);
-    });
-server.listen(3000);
-console.log("Im listening");
-*/
 
 
 
-const myDate = require('./main.js');
 
-const newDate = myDate.date;
-console.log(newDate);
+// const myDate = require('./main.js');
+
+// const newDate = myDate.date;
+// console.log(newDate);
