@@ -1,0 +1,23 @@
+img {
+    width: 100px;
+    height: 250px;
+}
+
+.main-slide {
+    margin-top: 30px;
+    width: 50%;
+    text-align: center;
+}
+
+.carousel .slider-wreapper {
+width: 50%;
+}
+
+.carousel .thumb{
+    width: 5%;
+    height: 50px;
+}
+
+.carousel{
+    text-align: center;
+}
