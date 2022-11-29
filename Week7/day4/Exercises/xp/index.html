@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>My Shopping List</title>
+</head>
+<body>
+  <h1>My Shopping List</h1>
+  <form method="POST" action="/update_shopping_list">
+    <input type="text" id="item" name="item"/>
+    <input type="text" id="amount" name="amount"/>
+    <input type="submit" value="Submit"/>
+  </form>
+
+  <ul>
+    {items}
+  </ul>
+  
+  
+</body>
+</html>

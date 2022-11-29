@@ -1,0 +1,11 @@
+{
+  "name": "hila",
+  "version": "1.0.0",
+  "description": "hila_express_project",
+  "main": "app.js",
+  "author": "Hila Zamir",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
